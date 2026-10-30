@@ -4,51 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOCO APROVA</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 500px;
-            width: 100%;
-            text-align: center;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        .btn {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background-color: #2980b9;
-        }
-    </style>
+    <!-- Conectando o arquivo de visual profissional -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>FOCO APROVA</h1>
-        <p>Bem-vindo ao seu aplicativo de organização e foco nos estudos!</p>
-        <button class="btn" onclick="alert('Bons estudos! O foco é a chave do sucesso.')">Começar Agora</button>
+    <div class="app-container">
+        <header>
+            FOCO APROVA
+        </header>
+        
+        <div class="content">
+            <div class="card">
+                <h3>🤖 Professora IA Gemini</h3>
+                <p>Tire suas dúvidas de concurso instantaneamente.</p>
+            </div>
+            
+            <div class="card">
+                <h3>📚 Simulados & Questões</h3>
+                <p>Treine com correção automatizada.</p>
+            </div>
+            
+            <div class="card">
+                <h3>📊 Desempenho</h3>
+                <p>Acompanhe sua evolução e notas.</p>
+            </div>
+            
+            <button class="btn-main" onclick="iniciarEstudos()">Começar Agora</button>
+        </div>
     </div>
 
+    <!-- Conectando o arquivo de funcionalidades -->
+    <script src="script.js"></script>
 </body>
 </html>
